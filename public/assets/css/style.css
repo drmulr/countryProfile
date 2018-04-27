@@ -8,6 +8,10 @@
         height: 40px;
     }
 
+    .handwriting {
+        font-family: 'Satisfy', cursive;
+    }
+
     #navHead {
         height: 70px;
     }

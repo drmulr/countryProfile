@@ -1,0 +1,13 @@
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #fcfcfb;
+    }
+
+    .nav-logo {
+        width: 125px;
+        height: 40px;
+    }
+
+    #navHead {
+        height: 70px;
+    }

@@ -1,5 +1,6 @@
     body {
-        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Raleway', sans-serif;
         background-color: #fcfcfb;
     }
 
@@ -10,8 +11,34 @@
 
     .handwriting {
         font-family: 'Satisfy', cursive;
+        color: darkred;
     }
 
+    .panel-head {
+        font-weight: bold;
+        color: darkred;
+    }
+
+    /* Email Well Styling */
+    .email-well {
+        background-color: #f4f2ef;
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+        padding: 1em;
+        line-height: 1.5;
+        padding-top: 3rem!important;
+    }
+    .email-field {
+        font: inherit;
+        font-size: 1em;
+        padding: 0.75em 0.55em 0.5em;
+        /* border: 1px solid #cbd0d3; */
+        /* box-shadow: inset 0 0 6px rgba(8, 60, 92, 0.135);
+        background: #eff5f8; */
+        width: 100%;
+    }
+
+    /* Navbar Extra Styling */
     #navHead {
         height: 70px;
     }

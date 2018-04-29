@@ -1,21 +1,24 @@
-$(".add-email-form").on("submit", function(event) {
+$(".add-email-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newEmail = {
-      author: $("#auth").val().trim(),
-      quote: $("#quo").val().trim()
+        first_name: $("#firstname").val().trim(),
+        last_name: $("#lastname").val().trim(),
+        email: $("#email").val().trim()
     };
-
+    console.log(newEmail);
     // Send the POST request.
-    $.ajax("/api/addemail", {
-      type: "POST",
-      data: newEmail
-    }).then(
-      function() {
-        console.log("Email Added to DB");
-        // Reload the page to get the updated list
-        location.reload();
-      }
-    );
-  });
+    $.ajax({
+        url: "/api/addemail",
+        type: "POST",
+        data: newEmail
+    }).done(
+        function () {
+            console.log("Email Added to DB");
+            // Reload the page to get the updated list
+            // location.reload();
+            // return
+        }
+        );
+});

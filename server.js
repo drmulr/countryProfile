@@ -17,7 +17,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// import environmental variables from our variables.env file
+//Import environmental variables from our variables.env file
 require('dotenv').config({ path: 'variables.env' });
 
 //Database Connection
@@ -30,24 +30,33 @@ var connection = mysql.createConnection({
   database: process.env.DATABASE
 });
 
+if (!connection) {
+  console.log("No Connection - better check on that!");
+}
+
 // Serve index.handlebars to the root route
 app.get("/", function(req, res) {
     res.render("index");
 });
 
-app.post("/api/join", function(req, res) {
-  connection.query("INSERT INTO wycliffe (author, quote) VALUES (?, ?)", [
-    req.body.author, req.body.quote
+
+// Add Email to DB
+// Route
+app.post("/api/addemail", function(req, res) {
+  connection.query("INSERT INTO email_signups (first_name, last_name, email) VALUES (?, ?, ?)", 
+  [
+    req.body.first_name, req.body.last_name, req.body.email
   ], function(err, result) {
     if (err) {
       // If an error occurred, send a generic server faliure
       return res.status(500).end();
     }
     //NOTE === Need send back confirmation that email was added to list
-    res.json({ id: result.insertId });
+    // res.json({ id: result.insertId });
   });
 });
 
+//Server Listening
 app.listen(port, function() {
   console.log("Listening on PORT " + port);
 });

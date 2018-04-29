@@ -19,6 +19,22 @@
         color: darkred;
     }
 
+    .side-btn {
+        background-color: #179ca5;
+    }
+
+    .media-box {
+        background-color: #f4f2ef;
+    }
+
+    .single-map {
+        position:relative;
+        width: 25%;
+        float: right;
+        /* opacity: 0.7; */
+    }
+
+    
     /* Email Well Styling */
     .email-well {
         background-color: #f4f2ef;
@@ -32,10 +48,9 @@
         font: inherit;
         font-size: 1em;
         padding: 0.75em 0.55em 0.5em;
-        /* border: 1px solid #cbd0d3; */
-        /* box-shadow: inset 0 0 6px rgba(8, 60, 92, 0.135);
-        background: #eff5f8; */
         width: 100%;
+        font-weight: bolder;
+        color: white;
     }
 
     /* Navbar Extra Styling */

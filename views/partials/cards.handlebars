@@ -1,103 +1,53 @@
 <div class="container">
+
   <div class="row">
     {{!-- Left Sidebar --}}
+
+    {{!-- Donate Panel --}}
+    {{!-- ============================== --}}
     <div class="col-md-3">
-      <div class="email-well shadow p-3 mb-5 rounded">    
-          <h3 class="panel-head text--center">Donate to this Project</h3>
-
-          {{> donate }}
-
-          <p class="text--center text--smaller well--dry">Learn more about membership and ways to serve at Wycliffe.</p>
+      <div class="email-well shadow p-3 mb-5 rounded">
+        <h3 class="panel-head text-center">Donate to this Project</h3>
+        {{> donate }}
+        <p class="text--center text--smaller well--dry">Learn more about membership and ways to serve at Wycliffe.</p>
       </div>
-      <div class="email-well shadow p-3 mb-5 rounded">    
-          <h3 class="panel-head text--center">Connect With Us</h3>
-          <form action="https://go.pardot.com/l/26032/2015-06-05/4bwcfk" class="floatlabels inline" method="post">
-            <fieldset class="email-field cell cell--100 well--small well--bottom">
-              <input id="text-firstname-597" type="text" name="firstname" placeholder="First Name"/>            
-            </fieldset>
-            <fieldset class="email-field cell cell--100 well--small well--bottom">
-              <input id="text-lastname-597" type="text" name="lastname" placeholder="Last Name"/>         
-            </fieldset>
-            <fieldset class="email-field cell cell--100 well--small well--bottom">
-              <input id="text-email-597" type="email" name="email" placeholder="Email Address"/>           
-            </fieldset>
-            <button type="submit" class="email-field btn btn-primary">Learn More</button>
-          </form>
-          <p class="text--center text--smaller well--dry">Learn more about membership and ways to serve at Wycliffe.</p>
-      </div>
+
+    {{> email }}
+
     </div>
 
     {{!-- Main Body --}}
     <div class="col-md-9">
-        {{!-- Language Properties - Two Column Layout --}}
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
         <h1 class="handwriting display-4">Mexico</h1>
         <p class="lead">View details for, subscribe, and donate to our Mexico project below:</p>
       </div>
+      <div>
+        <img class="single-map shadow rounded" src="https://maps.googleapis.com/maps/api/staticmap?center=20.9187925,-101.2048925&zoom=3&size=150x200&key=AIzaSyD0Ktu5o3ON4h5kn8YMtRQBaQitunz7TiI&markers=20.9187925,-101.2048925&scale=5">
+      </div>
 
+      {{!-- Language Profile --}}
+      {{!-- ============================== --}}
       <h3 class="panel-head">Language Profile</h3>
-      <ul>
-        <li><span class="strong">Project:</span>Translation</li>
-        <li><span>Primary Language:</span>Spanish</li>
-        <li><span>People Group:</span>Mexican</li>
-        <li><span>Description:</span>The history of Mexico, a country in the southern portion of North America, covers a period
-          of more than three millennia. First populated more than 13,000 years ago, the territory had complex indigenous
-          civilizations before being conquered and colonized by the Spanish in the 16th century</li>
-        <li><span>Population:</span>16,000,000</li>
-      </ul>
-      <h3 class="panel-head">Funding Status</h3>
-      <ul>
-        <li><span>Total Raised:</span>$10,000</li>
-        <li><span>Total Need Remaining:</span>$3,500</li>
-      </ul>
+        <ul>
+          <li><span class="strong">Project: </span>Translation</li>
+          <li><span>Primary Language: </span>Spanish</li>
+          <li><span>People Group: </span>Mexican</li>
+          <li><span>Description: </span>The history of Mexico, a country in the southern portion of North America, covers a period
+            of more than three millennia. First populated more than 13,000 years ago, the territory had complex indigenous
+            civilizations before being conquered and colonized by the Spanish in the 16th century</li>
+          <li><span>Population: </span>16,000,000</li>
+        </ul>
+        <h3 class="panel-head">Funding Status</h3>
+        <ul>
+          <li><span>Total Raised: </span>$10,000</li>
+          <li><span>Total Need Remaining: </span>$3,500</li>
+        </ul>
+
+      {{> media }}
+      
 
 
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="handwriting my-0 font-weight-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="handwriting my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="handwriting my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
       </div>
     </div>
   </div>

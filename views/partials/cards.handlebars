@@ -1,18 +1,19 @@
 <div class="container">
-
   <div class="row">
-    {{!-- Left Sidebar --}}
+    {{!-- Left Sidebar --}} 
 
-    {{!-- Donate Panel --}}
-    {{!-- ============================== --}}
     <div class="col-md-3">
       <div class="email-well shadow p-3 mb-5 rounded">
         <h3 class="panel-head text-center">Donate to this Project</h3>
+
+        {{!-- Modal for Donate Option --}}
         {{> donate }}
+
         <p class="text--center text--smaller well--dry">Learn more about membership and ways to serve at Wycliffe.</p>
       </div>
 
-    {{> email }}
+      {{!-- Join Mailing List --}} 
+      {{> email }}
 
     </div>
 
@@ -26,28 +27,26 @@
         <img class="single-map shadow rounded" src="https://maps.googleapis.com/maps/api/staticmap?center=20.9187925,-101.2048925&zoom=3&size=150x200&key=AIzaSyD0Ktu5o3ON4h5kn8YMtRQBaQitunz7TiI&markers=20.9187925,-101.2048925&scale=5">
       </div>
 
-      {{!-- Language Profile --}}
-      {{!-- ============================== --}}
+      {{!-- Language Profile --}} 
       <h3 class="panel-head">Language Profile</h3>
-        <ul>
-          <li><span class="strong">Project: </span>Translation</li>
-          <li><span>Primary Language: </span>Spanish</li>
-          <li><span>People Group: </span>Mexican</li>
-          <li><span>Description: </span>The history of Mexico, a country in the southern portion of North America, covers a period
-            of more than three millennia. First populated more than 13,000 years ago, the territory had complex indigenous
-            civilizations before being conquered and colonized by the Spanish in the 16th century</li>
-          <li><span>Population: </span>16,000,000</li>
-        </ul>
-        <h3 class="panel-head">Funding Status</h3>
-        <ul>
-          <li><span>Total Raised: </span>$10,000</li>
-          <li><span>Total Need Remaining: </span>$3,500</li>
-        </ul>
+      <ul>
+        <li><span class="strong">Project: </span>Translation</li>
+        <li><span>Primary Language: </span>Spanish</li>
+        <li><span>People Group: </span>Mexican</li>
+        <li><span>Description: </span>The history of Mexico, a country in the southern portion of North America, covers a period
+          of more than three millennia. First populated more than 13,000 years ago, the territory had complex indigenous
+          civilizations before being conquered and colonized by the Spanish in the 16th century</li>
+        <li><span>Population: </span>16,000,000</li>
+      </ul>
+      <h3 class="panel-head">Funding Status</h3>
+      <ul>
+        <li><span>Total Raised: </span>$10,000</li>
+        <li><span>Total Need Remaining: </span>$3,500</li>
+      </ul>
 
+      {{!-- Media Panel Inserts --}}
       {{> media }}
-      
 
-
-      </div>
     </div>
   </div>
+</div>

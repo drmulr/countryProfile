@@ -57,3 +57,9 @@
     #navHead {
         height: 70px;
     }
+
+    .card-title {
+        color: darkred;
+        text-transform: uppercase;
+        font-weight: bold;
+    }

@@ -39,7 +39,6 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
-
 // Add Email to DB
 // Route
 app.post("/api/addemail", function(req, res) {

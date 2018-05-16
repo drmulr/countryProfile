@@ -7,7 +7,6 @@ $(".add-email-form").on("submit", function (event) {
         last_name: $("#lastname").val().trim(),
         email: $("#email").val().trim()
     };
-    console.log(newEmail);
     // Send the POST request.
     $.ajax({
         url: "/api/addemail",
@@ -15,10 +14,8 @@ $(".add-email-form").on("submit", function (event) {
         data: newEmail
     }).done(
         function () {
-            console.log("Email Added to DB");
-            // Reload the page to get the updated list
-            // location.reload();
-            // return
-        }
-        );
+            $("#firstname").val("");
+            $("#lastname").val("");
+            $("#email").val("");
+        });
 });

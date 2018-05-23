@@ -13,9 +13,6 @@ $(".add-email-form").on("submit", function (event) {
         type: "POST",
         data: newEmail
     }).done(
-        function () {
-            $("#firstname").val("");
-            $("#lastname").val("");
-            $("#email").val("");
-        });
+        $(".add-email-form").empty();
+    );
 });

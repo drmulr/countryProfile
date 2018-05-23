@@ -5,7 +5,7 @@ Hello, this is a sample language profile for Wycliffe Bible Translators. You'll 
 
 You'll notice the rotating carousel of banners on the live site, and the still image below:
 
-<img src="./public/assets/img/md/screenshot1.png">
+<img src="./public/assets/img/md/screenshot_1.jpg">
 
 
 Also included is a modal pop-up for those wanting to donate toward this project:
